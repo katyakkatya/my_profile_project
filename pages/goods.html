@@ -5,40 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Семестровая работа</title>
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
 
 <body>
-    <div id="header">Хэдер</div>
-    <div id="menu">
-        <ul>
-            <li><a href="../index.html">Главная</a></li>
-            <li><a href="../pages/news.html">Новости</a></li>
-            <li><a href="../pages/practices.html">Практики</a></li>
-            <li><a href="../pages/goods.html">Товары</a></li>
-            <li><a href="../pages/contacts.html">Контакты</a></li>
-        </ul>
-    </div>
-    <div id="content">
-        <div>
-            Товары:
-            <div>
-                <img src="../images/default-nusha.jpg" alt="Обычная Нюша" width="200" height="250">
-                <h2>Обычная Нюша</h2>
-                <h3>1000000 руб.</h3>
-            </div>
-            <div>
-                <img src="../images/new-year-nusha.jpg" alt="Новогодняя Нюша" width="200" height="250">
-                <h2>Новогодняя Нюша</h2>
-                <h3>999999 руб.</h3>
-            </div>
-            <div>
-                <img src="../images/vkusno-nusha.jpg" alt="Вкусно и точка Нюша" width="200" height="250">
-                <h2>Вкусно и точка Нюша</h2>
-                <h3>1000001 руб.</h3>
+    <div class="page-container">
+        <div class="header">Товары</div>
+        <div class="nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/news.html">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/practices.html">Практики</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/goods.html">Товары</a></li>
+                <li class="nav-item"><a class="nav-link" href="../pages/contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="goods-title">Товары</h1>
+            <div class="goods-container">
+                <div class="goods">
+                    <img src="../images/default-nusha.jpg" alt="Обычная Нюша" width="200" height="250">
+                    <h2 class="headline">Обычная Нюша</h2>
+                    <h3 class="cost">1000000 руб.</h3>
+                </div>
+                <div class="goods">
+                    <img src="../images/new-year-nusha.jpg" alt="Новогодняя Нюша" width="200" height="250">
+                    <h2 class="headline">Новогодняя Нюша</h2>
+                    <h3 class="cost">999999 руб.</h3>
+                </div>
+                <div class="goods">
+                    <img src="../images/vkusno-nusha.jpg" alt="Вкусно и точка Нюша" width="200" height="250">
+                    <h2 class="headline">Вкусно и точка Нюша</h2>
+                    <h3 class="cost">1000001 руб.</h3>
+                </div>
             </div>
         </div>
+        <div class="footer">Футер</div>
     </div>
-    <div id="footer">Футер</div>
 </body>
 
 </html>
