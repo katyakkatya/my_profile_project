@@ -11,8 +11,10 @@
 
 <body>
     <div class="page-container">
-        <div class="header">Главная</div>
-        <div class="nav">
+        <header class="header">
+            <h1>Главная</h1>
+        </header>
+        <nav class="nav">
             <ul class="nav-list">
                 <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/news.html">Новости</a></li>
@@ -20,42 +22,50 @@
                 <li class="nav-item"><a class="nav-link" href="pages/goods.html">Товары</a></li>
                 <li class="nav-item"><a class="nav-link" href="pages/contacts.html">Контакты</a></li>
             </ul>
-        </div>
-        <div class="content">
-            <div class="profile-header">
+        </nav>
+        <main class="content">
+            <article class="profile-header">
                 <h1 class="profile-title">Информация об авторе</h1>
                 <img class="profile-photo"  src="images/photo.jpg" alt="Фото автора" width="200" height="250">
                 <h2 class="profile-name">Кленова Екатерина Михайловна</h2>
                 <p>ЭФБО-02-24</p>
-            </div>
-            <div class="about-me">
+            </article>
+            <h2 class="section-title">Обо мне</h2>
+            <section class="about-me">
                 <p>Обо мне: Сведения о том, что кого-то здесь зовут Нюшей, устарели. Если хотите у меня что-то попросить или выразить своё
                 восхищение, называйте меня просто Корнелией. А теперь пойдёмте со мной — я научу вас играть в игры, которые помогут вам
                 развить интеллект до пристойного.</p>
-            </div>
-            <div class="skills-container">
-                <div class="skill-tag">Плету макраме</div>
-                <div class="skill-tag">Хороший вратарь</div>
-                <div class="skill-tag">Разбираюсь в технике</div>
-                <div class="skill-tag">Имею способность управлять электричеством</div>
-            </div>
-            <div class="experience-section">
+            </section>
+            <section class="skills-container">
+                <h2 class="section-title">Мои навыки</h2>
+                <div class="skills-grid">
+                    <div class="skill-tag">Плету макраме</div>
+                    <div class="skill-tag">Хороший вратарь</div>
+                    <div class="skill-tag">Разбираюсь в технике</div>
+                    <div class="skill-tag">Имею способность управлять электричеством</div>
+                </div>
+            </section>
+            <section class="experience-section">
                 <h2 class="section-title">Мой опыт работы</h2>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 1</h3>
-                    <p class="experience-desc">Работала хоккеистом.</p>
+                <div class="experience-grid">
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 1</h3>
+                        <p class="experience-desc">Работала хоккеистом.</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 2</h3>
+                        <p class="experience-desc">Работала футболистом.</p>
+                    </article>
+                    <article class="experience-card">
+                        <h3 class="experience-title">Опыт 3</h3>
+                        <p class="experience-desc">Работала запускателем воздушных змеев.</p>
+                    </article>
                 </div>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 2</h3>
-                    <p class="experience-desc">Работала футболистом.</p>
-                </div>
-                <div class="experience-card">
-                    <h3 class="experience-title">Опыт 3</h3>
-                    <p class="experience-desc">Работала запускателем воздушных змеев.</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer">Футер</div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Футер</p>
+        </footer>
     </div>
 </body>
 </html>
