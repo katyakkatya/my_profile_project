@@ -430,7 +430,7 @@ main.content {
     text-align: center;
 }
 
-.call-me {
+.contact-button {
     background: linear-gradient(135deg, #ed94ff 0%, #ff85a3 100%);
     padding: 20px;
     border-radius: 10px;
@@ -441,7 +441,7 @@ main.content {
     transition: transform 0.3s ease
 }
 
-.call-me:hover {
+.contact-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
 }
