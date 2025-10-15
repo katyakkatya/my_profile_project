@@ -26,7 +26,7 @@
             overflow-y: auto;
         }
     
-        .modal-header {
+        .modal__header {
             background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
             padding: 1.5rem;
@@ -34,29 +34,29 @@
             margin: 0;
         }
     
-        .modal-header h2 {
+        .modal__header h2 {
             margin: 0;
             color: white;
             font-size: 1.5rem;
         }
     
-        .modal-content {
+        .modal__content {
             padding: 2rem;
         }
     
-        .form-group {
+        .form__group {
             margin-bottom: 1.5rem;
         }
     
-        .form-group label {
+        .form__group label {
             display: block;
             margin-bottom: 0.5rem;
             font-weight: 600;
             color: #2c3e50;
         }
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
+        .form__group input,
+        .form__group select,
+        .form__group textarea {
             width: 100%;
             padding: 0.75rem;
             border: 2px solid #e9ecef;
@@ -65,17 +65,17 @@
             transition: border-color 0.3s ease;
             box-sizing: border-box;
         }
-        .form-group input:focus,
-        .form-group select:focus,
-        .form-group textarea:focus {
+        .form__group input:focus,
+        .form__group select:focus,
+        .form__group textarea:focus {
             outline: none;
             border-color: #667eea;
         }
-        .form-group textarea {
+        .form__group textarea {
             min-height: 100px;
             resize: vertical;
         }
-        .modal-actions {
+        .modal__actions {
             display: flex;
             gap: 1rem;
             justify-content: flex-end;
@@ -90,20 +90,20 @@
             transition: all 0.3s ease;
             font-weight: 600;
         }
-        .btn-primary {
+        .btn__primary {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
         }
-        .btn-primary:hover {
+        .btn__primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
         }
-        .btn-secondary {
+        .btn__secondary {
             background: #f8f9fa;
             color: #2c3e50;
             border: 2px solid #e9ecef;
         }
-        .btn-secondary:hover {
+        .btn__secondary:hover {
             background: #e9ecef;
         }
         .required {
@@ -130,7 +130,7 @@
                 width: calc(100vw - 2rem);
             }
 
-            .modal-actions {
+            .modal__actions {
                 flex-direction: column;
             }
 
@@ -142,56 +142,59 @@
 </head>
 
 <body>
-    <div class="page-container">
+    <div class="page">
         <header class="header">
-            <h1>Контакты</h1>
+            <h1 class="header__title">Контакты</h1>
         </header>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-        <main class="content">
+        <div class="under-header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/news.html">Новости</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/practices.html">Практики</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/goods.html">Товары</a></li>
+                    <li class="nav__item nav__item--active"><a class="nav__link" href="../pages/contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="btn-theme" type="button" onclick="toggleTheme()">🌙</button>
+        </div>
+        <main class="main">
             <div class="contacts">
-                <h1 class="contacts-title">Контакты</h1>
-                <article class="contact-info">
+                <h1 class="contacts__title">Контакты</h1>
+                <article class="contact__info">
                     Адрес эл.почты: nusha@nusha.ru
                 </article>
-                <article class="contact-info">
+                <article class="contact__info">
                     Адрес: Земля, Страна смешариков, свой дом
                 </article>
-                <button class="contact-button" onclick="contactModal.showModal()">Позвоните мне</button>
+                <button class="contact__button" onclick="contactModal.showModal()">Позвоните мне</button>
             </div>
         </main>
         <footer class="footer">
-            <p>Футер</p>
+            <p class="footer__text">&copy; 2025 Мой сайт</p>
         </footer>
         <!-- Модальное окно для формы обратной связи -->
         <dialog id="contactModal">
-            <div class="modal-header">
+            <div class="modal__header">
                 <h2>Форма обратной связи</h2>
             </div>
         
-            <div class="modal-content">
+            <div class="modal__content">
                 <form id="feedbackForm" method="dialog">
-                    <div class="form-group">
+                    <div class="form__group">
                         <label for="name">Имя <span class="required">*</span>
                         </label>
                         <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
                     </div>
-                    <div class="form-group">
+                    <div class="form__group">
                         <label for="phone">Телефон<span class="required">*</span></label>
                         <input type="tel" id="phone" name="phone" required placeholder="+7 (XXX) XXX-XX-XX">
                     </div>
-                    <div class="form-group">
+                    <div class="form__group">
                         <label for="email">Электронная почта <span class="required">*</span></label>
                         <input type="email" id="email" name="email" required placeholder="example@mail.ru">
                     </div>
-                    <div class="form-group">
+                    <div class="form__group">
                         <label for="category">Категория обращения <span class="required">*</span></label>
                         <select id="category" name="category" required>
                             <option value="">Выберите категорию</option>
@@ -205,17 +208,17 @@
                             <option value="other">Другое</option>
                         </select>
                     </div>
-                    <div class="form-group">
+                    <div class="form__group">
                         <label for="message">Текст обращения <span class="required">*</span></label>
                         <textarea id="message" name="message" required
                             placeholder="Опишите вашу проблему или вопрос..."></textarea>
                     </div>
-                    <div class="modal-actions">
+                    <div class="modal__actions">
                         <!-- Кнопка отмены с автоматическим закрытием через
                     form method="dialog" -->
                         <button type="submit" class="btn btnsecondary">Отмена</button>
                         <!-- Кнопка отправки с обработкой через JavaScript -->
-                        <button type="button" class="btn btn-primary" onclick="submitForm()">Отправить</button>
+                        <button type="button" class="btn btn__primary" onclick="submitForm()">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -270,4 +273,5 @@
         </script>
     </div>
 </body>
+<script src="../js/theme.js"></script>
 </html>

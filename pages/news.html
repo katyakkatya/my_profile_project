@@ -9,45 +9,49 @@
 </head>
 
 <body>
-    <div class="page-container">
+    <div class="page">
         <header class="header">
-            <h1>Новости</h1>
+            <h1 class="header__title">Новости</h1>
         </header>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
-        <main class="content">
-            <section class="news-container">
-                <h1 class="news-title">Новости</h1>
-                <div class="news">
-                    <h2 class="headline">Нюша = Анна</h2>
-                    <h3 class="author">22.12.2003 Инкогнито</h3>
+        <div class="under-header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                    <li class="nav__item nav__item--active"><a class="nav__link" href="../pages/news.html">Новости</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/practices.html">Практики</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/goods.html">Товары</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="btn-theme" type="button" onclick="toggleTheme()">🌙</button>
+        </div>
+        <main class="main">
+            <section class="news">
+                <h1 class="news__title">Новости</h1>
+                <div class="news__container">
+                    <h2 class="news__headline">Нюша = Анна</h2>
+                    <h3 class="news__author">22.12.2003 Инкогнито</h3>
                     В серии «Новый год по-взрослому!» Нюша говорит, что её полное имя — Анна. В реальной жизни, Нюша - это сокращение от
                     имени Анна. Таким образом, она единственный персонаж из основной девятки с реальным именем.
                 </div>
-                <div class="news">
-                    <h2 class="headline">Пародия на "Сумерки"</h2>
-                    <h3 class="author">22.12.2003 Инкогнито</h3>
+                <div class="news__container">
+                    <h2 class="news__headline">Пародия на "Сумерки"</h2>
+                    <h3 class="news__author">22.12.2003 Инкогнито</h3>
                     Из серии «Жизнь прекрасна» известно что Нюше нравится фильм «Рассветики», который является пародией на реально
                     существующий фильм «Сумерки».
                 </div>
-                <div class="news">
-                    <h2 class="headline">День рождения</h2>
-                    <h3 class="author">22.12.2003 Инкогнито</h3>
+                <div class="news__container">
+                    <h2 class="news__headline">День рождения</h2>
+                    <h3 class="news__author">22.12.2003 Инкогнито</h3>
                     Нюша чаще всего празднует день рождения за всю историю франшизы.
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <p>Футер</p>
+            <p class="footer__text">&copy; 2025 Мой сайт</p>
         </footer>
     </div>
+    
 </body>
-
+<script src="../js/theme.js"></script>
 </html>

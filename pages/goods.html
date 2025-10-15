@@ -9,43 +9,48 @@
 </head>
 
 <body>
-    <div class="page-container">
-        <div class="header">Товары</div>
-        <div class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="../pages/contacts.html">Контакты</a></li>
-            </ul>
+    <div class="page">
+        <div class="header">
+            <h1 class="header__title">Товары</h1>
         </div>
-        <main class="content">
-            <section class="goods-section">
-                <h1 class="goods-title">Товары</h1>
-                <div class="goods-container">
-                    <div class="goods">
-                        <img class="nusha-img" src="../images/default-nusha.jpg" alt="Обычная Нюша" width="200" height="250">
-                        <h2 class="headline">Обычная Нюша</h2>
-                        <h3 class="cost">1000000 руб.</h3>
+        <div class="under-header">
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="../index.html">Главная</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/news.html">Новости</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/practices.html">Практики</a></li>
+                    <li class="nav__item nav__item--active"><a class="nav__link" href="../pages/goods.html">Товары</a></li>
+                    <li class="nav__item"><a class="nav__link" href="../pages/contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <button class="btn-theme" type="button" onclick="toggleTheme()">🌙</button>
+        </div>
+        <main class="main">
+            <section class="goods">
+                <h1 class="goods__title">Товары</h1>
+                <div class="goods__container">
+                    <div class="goods__item">
+                        <img class="nusha__img" src="../images/default-nusha.jpg" alt="Обычная Нюша" width="200" height="250">
+                        <h2 class="goods__headline">Обычная Нюша</h2>
+                        <h3 class="goods__cost">1000000 руб.</h3>
                     </div>
-                    <div class="goods">
-                        <img class="nusha-img" src="../images/new-year-nusha.jpg" alt="Новогодняя Нюша" width="200" height="250">
-                        <h2 class="headline">Новогодняя Нюша</h2>
-                        <h3 class="cost">999999 руб.</h3>
+                    <div class="goods__item">
+                        <img class="nusha__img" src="../images/new-year-nusha.jpg" alt="Новогодняя Нюша" width="200" height="250">
+                        <h2 class="goods__headline">Новогодняя Нюша</h2>
+                        <h3 class="goods__cost">999999 руб.</h3>
                     </div>
-                    <div class="goods">
-                        <img class="nusha-img" src="../images/vkusno-nusha.jpg" alt="Вкусно и точка Нюша" width="200" height="250">
-                        <h2 class="headline">Вкусно и точка Нюша</h2>
-                        <h3 class="cost">1000001 руб.</h3>
+                    <div class="goods__item">
+                        <img class="nusha__img" src="../images/vkusno-nusha.jpg" alt="Вкусно и точка Нюша" width="200" height="250">
+                        <h2 class="goods__headline">Вкусно и точка Нюша</h2>
+                        <h3 class="goods__cost">1000001 руб.</h3>
                     </div>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <p>Футер</p>
+            <p class="footer__text">&copy; 2025 Мой сайт</p>
         </footer>
     </div>
 </body>
-
+<script src="../js/theme.js"></script>
 </html>
